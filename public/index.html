@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app="Standup">
+<head>
+	<title>Standup</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+    <script src="app.js"></script>
+</head>
+<body ng-controller="FormController">
+	<div class="container">
+		<p>Welcome to Standup - Please Register your company to get Started</p>
+		<form>
+			<input type="text" placeholder="Company Name" ng-model="companyData.cname">
+			<input type="text" placeholder="Email" ng-model="companyData.email">
+			<input type="password" placeholder="Password" ng-model="companyData.password">
+			<input type="text" placeholder="Admin" ng-model="companyData.admin">
+		</form>
+		<button type="submit" ng-click="register()">Add</button>
+	</div>
+</body>
+</html>
